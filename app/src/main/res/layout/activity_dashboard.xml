@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/estudiantes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffab8e"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Estudiantes"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout>
+                <ImageView
+                    android:id="@+id/docentes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#a8b1ff"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Docentes"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <RelativeLayout>
+                <ImageView
+                    android:id="@+id/notas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ee96ff"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Notas"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout>
+                <ImageView
+                    android:id="@+id/foros"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#93ff87"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="Foros"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
