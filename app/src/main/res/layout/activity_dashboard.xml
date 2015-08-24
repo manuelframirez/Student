@@ -20,6 +20,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#ffab8e"
+                    android:src="@drawable/school3"
+                    android:scaleType="center"
                     />
                 <TextView
                     android:layout_width="match_parent"
@@ -36,6 +38,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#a8b1ff"
+                    android:src="@drawable/school84"
+                    android:scaleType="center"
                     />
                 <TextView
                     android:layout_width="match_parent"
@@ -57,6 +61,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#ee96ff"
+                    android:src="@drawable/notebook88"
+                    android:scaleType="center"
                     />
                 <TextView
                     android:layout_width="match_parent"
@@ -73,6 +79,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#93ff87"
+                    android:src="@drawable/note10"
+                    android:scaleType="center"
                     />
                 <TextView
                     android:layout_width="match_parent"
