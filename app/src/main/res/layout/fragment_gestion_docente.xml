@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kcumendigital.student.fragments.GestionDocente"
+    android:background="@color/background_fragment_student"
+    android:gravity="center">
+
+    <TextView
+        android:text="@string/txt_gestion_docente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamaño_texto"
+        android:textColor="@color/color_blanco"
+        />
+
+    <Button
+        android:id="@+id/horario_docente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_mis_horarios"/>
+
+    <Button
+        android:id="@+id/agenda_docente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_mi_agenda"/>
+
+    <Button
+        android:id="@+id/notasxcurso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_notas_docente"/>
+
+
+
+</LinearLayout>

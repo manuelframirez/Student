@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+        tools:context=".MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -19,34 +19,44 @@
                     android:id="@+id/estudiantes"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#ffab8e"
                     android:src="@drawable/school3"
                     android:scaleType="center"
+                    android:layout_margin="@dimen/margin_dashboard"
+                    android:background="@color/color_dashboard"
                     />
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/height_text_dashboard"
                     android:layout_alignParentBottom="true"
-                    android:text="Estudiantes"
+                    android:text="@string/text_dashboard_estudiante"
                     android:gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@color/background_fragment_student"
+                    android:textColor="@color/color_blanco"
                     />
             </RelativeLayout>
 
-            <RelativeLayout>
+            <RelativeLayout
+                android:layout_height="match_parent">
                 <ImageView
                     android:id="@+id/docentes"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#a8b1ff"
                     android:src="@drawable/school84"
                     android:scaleType="center"
+                    android:layout_margin="@dimen/margin_dashboard"
+                    android:background="@color/color_dashboard"
+
                     />
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/height_text_dashboard"
                     android:layout_alignParentBottom="true"
-                    android:text="Docentes"
+                    android:text="@string/text_dashboard_docente"
+                    android:textColor="@color/color_blanco"
                     android:gravity="center"
+                    android:background="@color/background_fragment_student"
+                    android:layout_margin="@dimen/margin_dashboard"
                     />
             </RelativeLayout>
 
@@ -55,39 +65,51 @@
         <TableRow
             android:layout_weight="1"
             android:layout_height="match_parent">
-            <RelativeLayout>
+            <RelativeLayout
+                android:layout_height="match_parent">
                 <ImageView
                     android:id="@+id/notas"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#ee96ff"
                     android:src="@drawable/notebook88"
                     android:scaleType="center"
+                    android:layout_margin="@dimen/margin_dashboard"
+                    android:background="@color/color_dashboard"
+
                     />
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/height_text_dashboard"
                     android:layout_alignParentBottom="true"
-                    android:text="Notas"
+                    android:text="@string/text_dashboard_notas"
+                    android:textColor="@color/color_blanco"
                     android:gravity="center"
+                    android:background="@color/background_fragment_student"
+                    android:layout_margin="@dimen/margin_dashboard"
                     />
             </RelativeLayout>
 
-            <RelativeLayout>
+            <RelativeLayout
+                android:layout_height="match_parent">
                 <ImageView
                     android:id="@+id/foros"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#93ff87"
                     android:src="@drawable/note10"
                     android:scaleType="center"
+                    android:layout_margin="@dimen/margin_dashboard"
+                    android:background="@color/color_dashboard"
+
                     />
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="@dimen/height_text_dashboard"
                     android:layout_alignParentBottom="true"
-                    android:text="Foros"
+                    android:text="@string/text_dashboard_foros"
                     android:gravity="center"
+                    android:textColor="@color/color_blanco"
+                    android:background="@color/background_fragment_student"
+                    android:layout_margin="@dimen/margin_dashboard"
                     />
             </RelativeLayout>
         </TableRow>

@@ -1,10 +1,47 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kcumendigital.student.GestionEstudiantes">
+    android:orientation="vertical"
+    tools:context="com.kcumendigital.student.fragments.GestionEstudiantes"
+    android:background="@color/background_fragment_student"
+    android:gravity="center"
+    android:padding="10dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestión Estudiantil"
+        android:textColor="@color/color_blanco"
+        android:textSize="@dimen/tamaño_texto"
+        android:paddingBottom="@dimen/padding_administrador_estudiantil"
+        />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/Cursos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cursos"
+        android:layout_gravity="center_vertical"/>
+    <Button
+        android:id="@+id/Materias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Materias"
+        android:layout_gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/Examenes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Examenes"
+        android:layout_gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/horarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horarios"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

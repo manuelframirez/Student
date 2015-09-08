@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_fragment_student">#3F51B5</color>
+    <color name="color_blanco">#E0E0E0</color>
+    <color name="color_dashboard">#C5CAE9</color>
+
+</resources>

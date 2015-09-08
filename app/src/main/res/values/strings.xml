@@ -8,4 +8,15 @@
     <string name="title_activity_teacher">TeacherActivity</string>
     <string name="title_activity_note">NoteActivity</string>
     <string name="title_activity_foros">ForosActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Texto</string>
+    <string name="txt_gestion_docente">Gestión Docente</string>
+    <string name="btn_mis_horarios">Mi Horario</string>
+    <string name="btn_mi_agenda">Mi Agenda</string>
+    <string name="btn_notas_docente">Notas</string>
+    <string name="text_dashboard_estudiante">Estudiantes</string>
+    <string name="text_dashboard_docente">Docentes</string>
+    <string name="text_dashboard_notas">Notas</string>
+    <string name="text_dashboard_foros">Foros</string>
 </resources>
