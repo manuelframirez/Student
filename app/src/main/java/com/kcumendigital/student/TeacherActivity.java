@@ -15,11 +15,14 @@ public class TeacherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teacher);
+<<<<<<< HEAD
 
         docente = new GestionDocente();
         FragmentTransaction ftr = getSupportFragmentManager().beginTransaction();
         ftr.replace(R.id.container_docente,docente);
         ftr.commit();
         setContentView(R.layout.activity_teacher);
+=======
+>>>>>>> 3ba169797b1e8021a8ce6787491db845595db581
     }
 }

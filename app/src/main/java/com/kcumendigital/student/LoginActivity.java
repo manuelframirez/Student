@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import com.google.android.gms.analytics.GoogleAnalytics;
 
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -26,6 +27,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         btn_user = (Button) findViewById(R.id.btn_login_usuario);
         btn_user.setOnClickListener(this);
+
+        ((AnalyticsAplication) getApplication()).getTracker(AnalyticsAplication.TrackerName.APP_TRACKER);
     }
 
     @Override
@@ -46,5 +49,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(this, "Credenciales incorrectos", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        GoogleAnalytics.getInstance(this).reportActivityStart(this);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        GoogleAnalytics.getInstance(this).reportActivityStop(this);
     }
 }
