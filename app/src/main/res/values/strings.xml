@@ -19,4 +19,14 @@
     <string name="text_dashboard_docente">Docentes</string>
     <string name="text_dashboard_notas">Notas</string>
     <string name="text_dashboard_foros">Foros</string>
+    
+    
+    <string-array name="cursos">
+        <item>Sexto</item>
+        <item>Septimo</item>
+        <item>Octavo</item>
+        <item>Noveno</item>
+        <item>Decimo</item>
+        <item>Once</item>
+    </string-array>
 </resources>

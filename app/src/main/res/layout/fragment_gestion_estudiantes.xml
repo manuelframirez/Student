@@ -18,20 +18,20 @@
         />
 
     <Button
-        android:id="@+id/Cursos"
+        android:id="@+id/cursos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cursos"
         android:layout_gravity="center_vertical"/>
     <Button
-        android:id="@+id/Materias"
+        android:id="@+id/materias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Materias"
         android:layout_gravity="center_vertical"/>
 
     <Button
-        android:id="@+id/Examenes"
+        android:id="@+id/examenes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Examenes"

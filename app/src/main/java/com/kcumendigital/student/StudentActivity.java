@@ -3,17 +3,16 @@ package com.kcumendigital.student;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-<<<<<<< HEAD
-import com.kcumendigital.student.fragments.GestionEstudiantes;
-=======
-
 import com.google.android.gms.analytics.GoogleAnalytics;
->>>>>>> 3ba169797b1e8021a8ce6787491db845595db581
+import com.kcumendigital.student.Util.GestionEstudiantesI;
+import com.kcumendigital.student.fragments.CursosFragment;
+import com.kcumendigital.student.fragments.GestionEstudiantes;
 
-public class StudentActivity extends AppCompatActivity {
+
+public class StudentActivity extends AppCompatActivity implements GestionEstudiantesI {
 
     GestionEstudiantes student;
+    CursosFragment cursos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,20 +20,14 @@ public class StudentActivity extends AppCompatActivity {
 
         student = new GestionEstudiantes();
 
+        cursos = new CursosFragment();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction(); // inicia la transacción
-
         ft.replace(R.id.container, student);
-
         ft.commit();
-
         setContentView(R.layout.activity_student);
 
-        
     }
 
-<<<<<<< HEAD
-
-=======
     @Override
     protected void onStart() {
         super.onStart();
@@ -46,5 +39,18 @@ public class StudentActivity extends AppCompatActivity {
         super.onStop();
         GoogleAnalytics.getInstance(this).reportActivityStop(this);
     }
->>>>>>> 3ba169797b1e8021a8ce6787491db845595db581
+
+    @Override
+    public void onButtonSelected(int button) {
+        if (button ==1){
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.container,cursos);
+            ft.commit();
+        }
+
+        if (button ==2){
+
+
+        }
+    }
 }

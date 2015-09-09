@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kcumendigital.student.fragments.CursosFragment"
+    android:background="@color/background_fragment_student"
+    android:gravity="center">
+
+    <ListView
+        android:id="@+id/lista_cursos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/background_fragment_student"
+        android:dividerHeight="2dp"
+        android:entries="@array/cursos"
+        android:background="@color/color_blanco">
+    </ListView>
+
+
+
+</LinearLayout>
