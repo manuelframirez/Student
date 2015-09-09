@@ -7,11 +7,12 @@
     android:gravity="center">
 
     <ListView
+        android:layout_margin="@dimen/margin_cursos_fragment"
         android:id="@+id/lista_cursos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:divider="@color/background_fragment_student"
-        android:dividerHeight="2dp"
+        android:dividerHeight="@dimen/divider_height_list_cursos"
         android:entries="@array/cursos"
         android:background="@color/color_blanco">
     </ListView>

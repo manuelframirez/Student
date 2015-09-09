@@ -6,4 +6,6 @@
     <dimen name="padding_administrador_estudiantil">30dp</dimen>
     <dimen name="height_text_dashboard">30dp</dimen>
     <dimen name="margin_dashboard">8dp</dimen>
+    <dimen name="margin_cursos_fragment">10dp</dimen>
+    <dimen name="divider_height_list_cursos">10dp</dimen>
 </resources>
